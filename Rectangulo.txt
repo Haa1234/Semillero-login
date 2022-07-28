@@ -1,0 +1,18 @@
+import javax.swing.JOptionPane;
+
+public class rectangulo implements forma{
+    private int base, altura, area;
+
+    @Override
+    public void calulaarea() {
+         base = Integer.parseInt(JOptionPane.showInputDialog("base: "));
+         altura = Integer.parseInt(JOptionPane.showInputDialog("altura: "));
+        area=base*altura;
+        System.out.println("Area: "+area);
+    }
+    public static void main(String[] args) {
+        rectangulo ra=new rectangulo();
+        ra.calulaarea();
+    }
+    
+}

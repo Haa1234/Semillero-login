@@ -1,0 +1,22 @@
+import javax.swing.JOptionPane;
+
+public class triangulo {
+
+    public static void main(String[] args) {
+        int a = Integer.parseInt(JOptionPane.showInputDialog("ingrese cantidad "));
+        int b = 1;
+        for (int i = 1; i <=a; i++) {
+            
+
+            for (int j = 1 ; j <= i; j++) {
+                System.out.print("\t" + b);
+                b++;
+                        
+            }
+
+            System.out.println("");
+        }
+
+    }
+
+}
